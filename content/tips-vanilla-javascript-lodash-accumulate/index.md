@@ -2,7 +2,7 @@
 slug = "tips-vanilla-javascript-lodash-accumulate-dictionary"
 image = "d6afde5c20e6612530bd8afaf1695704.png"
 title = "Vanilla JS と Lodash で連想配列を累計する"
-publishDate = 2020-12-04T12:59:28.364Z
+publishDate = 2020-12-04T15:28:14.811Z
 lastmod = ""
 tags = ["Tips", "JavaScript", "Lodash"]
 weight = 0
@@ -24,11 +24,10 @@ googleAds = true
 # 処理後
 
 [
-    { date: '2020-01-01', sales: 100 },
-    { date: '2020-01-02', sales: 300 },
-    { date: '2020-01-03', sales: 600 },
+  { date: '2020-01-01', sales: 100, accumulation: 100 },
+  { date: '2020-01-02', sales: 200, accumulation: 300 },
+  { date: '2020-01-03', sales: 300, accumulation: 600 }
 ]
-
 ```
 
 　本記事内で行っている作業は以下の環境下で実行したものです。また，Node.js や Lodash はインストール済みの前提で記述しており，インストール手順は割愛していることをご了承ください。
@@ -39,10 +38,14 @@ googleAds = true
 
 ## 2. Vanilla JS
 
-```js {linenos=table}
+　インターネットで公開されている[記事](https://www.it-swarm-ja.tech/ja/javascript/javascript%E3%81%A7%E7%B4%AF%E7%A9%8D%E5%90%88%E8%A8%88%E3%81%AE%E9%85%8D%E5%88%97%E3%82%92%E4%BD%9C%E6%88%90%E3%81%99%E3%82%8B/1042626037/)を参考に，Vanilla JS で実装したソースコードを ***app.js*** というファイル名で任意の場所に保存します。今回は，[reduce](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce) を用いることで累計を実装しています。
+
+```js
 const after = before.reduce((acc, cur, idx) => {
     if (acc.length) {
-        cur.sales += acc[idx - 1].sales;
+        cur.accumulation = cur.sales + acc[idx - 1].accumulation;
+    } else {
+        cur.accumulation = cur.sales;
     }
     acc.push(cur);
     return acc;
@@ -54,16 +57,12 @@ console.log(after);
 ```bash
 $ node app.js
 [
-  { date: '2020-01-01', sales: 100 },
-  { date: '2020-01-02', sales: 300 },
-  { date: '2020-01-03', sales: 600 }
+  { date: '2020-01-01', sales: 100, accumulation: 100 },
+  { date: '2020-01-02', sales: 200, accumulation: 300 },
+  { date: '2020-01-03', sales: 300, accumulation: 600 }
 ]
 ```
 
 ## 3. Lodash
 
-
-
 ## 4. おわりに
-
-
