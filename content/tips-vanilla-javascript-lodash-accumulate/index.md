@@ -38,7 +38,7 @@ googleAds = true
 
 ## 2. Vanilla JS
 
-　インターネットで公開されている[記事](https://www.it-swarm-ja.tech/ja/javascript/javascript%E3%81%A7%E7%B4%AF%E7%A9%8D%E5%90%88%E8%A8%88%E3%81%AE%E9%85%8D%E5%88%97%E3%82%92%E4%BD%9C%E6%88%90%E3%81%99%E3%82%8B/1042626037/)を参考に，Vanilla JS で実装したソースコードを ***app.js*** というファイル名で任意の場所に保存します。今回は，[reduce](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce) を用いることで累計を実装しています。
+　様々な実装が考えられますが，今回はインターネットで公開されている[記事](https://www.it-swarm-ja.tech/ja/javascript/javascript%E3%81%A7%E7%B4%AF%E7%A9%8D%E5%90%88%E8%A8%88%E3%81%AE%E9%85%8D%E5%88%97%E3%82%92%E4%BD%9C%E6%88%90%E3%81%99%E3%82%8B/1042626037/)を参考に，[reduce](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce) を用いることで累計を実装しています。
 
 ```js
 const after = before.reduce((acc, cur, idx) => {
@@ -53,6 +53,8 @@ const after = before.reduce((acc, cur, idx) => {
 
 console.log(after);
 ```
+
+　上記のソースコードを *app.js* というファイル名で任意のフォルダ内に保存します。app.js を実行すると，正常に累計されていることが確認できました。
 
 ```bash
 $ node app.js
