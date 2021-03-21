@@ -21,7 +21,7 @@ module.exports = {
     extend: {
       colors: {
         'default': { DEFAULT: '#6b7280' },
-        'primary': { DEFAULT: '#b91c1c' },
+        'primary': { DEFAULT: '#ad002d' },
         'secondary': { DEFAULT: '#24292e' },
         'amazon': { DEFAULT: '#ff9900' },
         'envelope': { DEFAULT: '#16a085' },
