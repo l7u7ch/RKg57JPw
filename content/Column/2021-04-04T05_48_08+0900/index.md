@@ -3,7 +3,7 @@ slug = "jaist-5d-program-interim-report"
 image = "57daed032aaa1b929c3d7dbe68cdddfc.png"
 title = "JAIST の 5D プログラムに関する中間報告書"
 publishDate = "2021-04-04T05:48:08+0900"
-lastmod = "2021-04-04T05:48:08+0900"
+lastmod = "2021-04-06T16:11:15+0900"
 tags = [ "Academic", "JAIST" ]
 googleAds = true
 +++
@@ -48,7 +48,7 @@ googleAds = true
 
 ## 4. 奨励金
 
-　博士論文研究基礎力審査に合格し，博士後期課程に進学した場合，毎月 3 万円の[奨励金](https://www.jaist.ac.jp/studentlife/support/scholarships.html#I04)が支給されます。年間で 36 万円，3 年間で 108 万円が支給されます。そのため，年間の授業が 535,800 円 → 175,800 円になります。また，日本学生支援機構奨学金や日本学術振興会特別研究員研究奨励金と併用することも可能です。しかし，SD プログラムのように入学料・授業料分の免除はありません。また，Doctoral Research Fellow の[奨励金](https://www.jaist.ac.jp/studentlife/support/scholarships.html#I02)とは併用することが出来ないため注意が必要です。
+　博士論文研究基礎力審査に合格し，博士後期課程に進学した場合，毎月 3 万円の[奨励金](https://www.jaist.ac.jp/studentlife/support/scholarships.html#I04)が支給されます。年間で 36 万円，3 年間で 108 万円が支給されます。そのため，年間の授業が 535,800 円 → 175,800 円になります。また，日本学生支援機構奨学金と併用することも可能です。しかし，SD プログラムのように入学料・授業料分の免除はありません。また，日本学術振興会特別研究員研究奨励金や Doctoral Research Fellow の[奨励金](https://www.jaist.ac.jp/studentlife/support/scholarships.html#I02)とは併用することが出来ないため注意が必要です。
 
 ## 5. おわりに
 
