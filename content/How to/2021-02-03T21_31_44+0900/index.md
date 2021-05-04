@@ -7,7 +7,6 @@ lastmod = "2021-02-03T21:31:44+0900"
 tags = ["Tech", "Netlify", "Tailwind CSS", "CSS"]
 weight = 0
 googleAds = true
-draft = false
 +++
 
 ## 1. はじめに
